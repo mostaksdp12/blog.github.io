@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  background: lightgrey;
+}
+label.logo {
+  line-height: 80px;
+  font-size: 30px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+.logo a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+}
+.logo a:hover {
+  color: orange;
+}
+.checkbtn {
+  float: right;
+  margin-right: 40px;
+  font-size: 30px;
+  line-height: 80px;
+  
+}
+#check {
+  display: none;
+}
+.header ul {
+  margin-top: 0;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  left: -100%;
+  top: 80px;
+  width: 100%;
+  transition: all 0.5s; 
+  background: #fff;
+}
+.header ul li {
+  display: block;
+  padding: 15px;
+  background: #fff;
+  width: 100%;
+}
+.header ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000;
+  transition: 0.5s;
+}
+.header ul li a:hover {
+  color: orange;
+}
+#check:checked ~ul {
+  left: 0;
+}
+.heading {
+  width: 100%;
+  height: 300px;
+  background-image: url('heading-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 100px;
+}
+.heading h4 {
+  color: orange;
+}
+.heading h1 {
+  color: #fff;
+}
+.footer {
+  background:#2d539b;
+  text-align: center;
+  padding: 50px;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 8px;
+  padding: 0 20px;
+  transition: 0.5s;
+}
+.footer a:hover {
+  color: orange;
+}
+.footer p {
+  font-size: 8px;
+  color: #fff;
+}
+.container {
+  width: 100%;
+  padding-top: 50px;
+}
+.template {
+  width: 70%;
+  margin: auto;
+  background-image: url('cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  text-align: center;
+}
+.template h4 {
+  color: orange;
+}
+.template h2{
+  color: #fff;
+}
+.template a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+  background: #c68417;
+  margin-top: 20px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.template a:hover {
+  background: orange;
+}
+.post {
+  width: 70%;
+  margin: auto;
+  border: 1px solid  lightgrey;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#post-img {
+  width: 100%;
+}
+.full-post {
+  padding: 20px;
+}
+.full-post h3 {
+  color: orange;
+}
+.full-post a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+}
+.full-post a:hover {
+  color: orange;
+}
+.full-post p {
+  font-size: 10px;
+}
+.nav {
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.nav ul li {
+  display: inline-block;
+  margin: 15px;
+}
+.nav ul li a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  color: #000;
+  border: 1px solid lightgrey;
+  transition: 0.5s;
+}
+.nav a:hover {
+  background: orange;
+  color: #fff;
+}
+#enter {
+  background: orange;
+  color: #fff;
+}
+.search {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+#post-search {
+  width: 100%;
+  padding: 20px;
+}
+.recent-po {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.recent-po a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+}
+.recent-po a:hover {
+  color: orange;
+}
+.catagory {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.catagory a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+}
+.catagory a:hover {
+  color: orange;
+}
+.tag {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.tag a {
+  text-decoration: none;
+  color: #000;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  margin: 20px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.tag a:hover {
+  background: orange;
+  color: #fff;
+}
+@media (max-width:858px) {
+   body {
+    margin: 0;
+    padding: 0;
+  }
+  .heading h4 {
+    font-size: 17px;
+  }
+  .heading h1 {
+    font-size: 20px;
+  }
+  label.logo {
+    padding: 0 30px;
+    font-size: 20px;
+  }
+  .checkbtn {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  .heading {
+    padding: 100px 10px;
+  }
+  .post , .template {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .nav {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+  .search {
+    width: 90%;
+    margin: auto;
+  }
+  .recent-po {
+    width: 90%;
+    margin: auto;
+  }
+  .catagory {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .tag {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+}
